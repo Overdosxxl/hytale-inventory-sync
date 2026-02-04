@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>com.yourname</groupId>
+    <artifactId>hytale-inventory-sync</artifactId>
+    <version>1.0.0</version>
+    
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <hytale.version>0.1.0</hytale.version> <!-- Aktuelle Hytale API Version -->
+    </properties>
+    
+    <dependencies>
+        <!-- Hytale API -->
+        <dependency>
+            <groupId>net.hytale</groupId>
+            <artifactId>hytale-api</artifactId>
+            <version>${hytale.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        
+        <!-- MySQL Connector -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.2.0</version>
+        </dependency>
+        
+        <!-- Gson für JSON Serialisierung -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.10.1</version>
+        </dependency>
+        
+        <!-- HikariCP Connection Pool -->
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>5.1.0</version>
+        </dependency>
+    </dependencies>
+</project>
